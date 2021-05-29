@@ -1,0 +1,1 @@
+Las pruebas manuales exploratorias se encuentran en la WIKI, en el siguiente link: https://github.com/EdgarLunaG-442/EscenarioPruebasW8/wiki/Pruebas-manuales-exploratorias o en la seccion de Pruebas Exploratorias.
