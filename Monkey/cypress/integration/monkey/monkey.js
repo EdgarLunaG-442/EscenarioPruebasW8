@@ -2,7 +2,7 @@
 require('cypress-plugin-tab')
 var fs = require('fs')
 
-const url = Cypress.config('baseUrl') || "https://uniandes.edu.co/"
+const url = Cypress.config('baseUrl')
 const appName = Cypress.env('appName') || "your app"
 const events = Cypress.env('events') || 100
 const delay = Cypress.env('delay') || 100
@@ -508,9 +508,6 @@ describe(`${appName} under monkeys`, function() {
         cy.task('genericReport', { 'html': `<p><strong>Test failed with the error: </strong>${err}</p>` });
         return false;
     });
-
-
-
     it(`visits ${appName} and survives monkeys`, function() {
         if (!seed) seed = getRandomInt(0, Number.MAX_SAFE_INTEGER);
 
@@ -533,11 +530,11 @@ describe(`${appName} under monkeys`, function() {
                 curPageMaxX = Math.max(d.body.scrollWidth, d.body.offsetWidth, d.documentElement.clientWidth, d.documentElement.scrollWidth, d.documentElement.offsetWidth) - win.innerWidth
             })
             cy.wait(1000)
-                //Add an event for each type of event in order to enter the else statement of randomEvent method
             cy.get("#ember8").type("b@uniandes.edu.co")
             cy.get("#ember10").type("$0987654321.")
             cy.get("#ember12").click()
             cy.wait(1000)
+                //Add an event for each type of event in order to enter the else statement of randomEvent method
             for (let i = 0; i < events + 5; i++) {
                 evtIndex++
                 randomEvent()

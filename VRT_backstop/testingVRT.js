@@ -1,6 +1,6 @@
 const { exec } = require('child_process');
 const fs = require('fs');
-const pathImagesArray = "../Playwright/ghost3.3.0/screenshots";
+const pathImagesArray = "./ghost3.3.0/screenshots";
 //Se carga los escenarios requeridos junto con el numero de screenshots a revisar
 
 (async() => {
@@ -46,7 +46,7 @@ const pathImagesArray = "../Playwright/ghost3.3.0/screenshots";
                         `{
                   "label": "${escenarios[i][0]}-${j+1}",
                   "cookiePath": "backstop_data/engine_scripts/cookies.json",
-                  "url": "../Playwright/ghost${version}/screenshots/${escenarios[i][0]}/${escenarios[i][0]}-${j+1}.png",
+                  "url": "./ghost${version}/screenshots/${escenarios[i][0]}/${escenarios[i][0]}-${j+1}.png",
                   "referenceUrl": "",
                   "readyEvent": "",
                   "readySelector": "",
@@ -67,7 +67,7 @@ const pathImagesArray = "../Playwright/ghost3.3.0/screenshots";
                         `{
                   "label": "${escenarios[i][0]}-${j+1}",
                   "cookiePath": "backstop_data/engine_scripts/cookies.json",
-                  "url": "../Playwright/ghost${version}/screenshots/${escenarios[i][0]}/${escenarios[i][0]}-${j+1}.png",
+                  "url": "./ghost${version}/screenshots/${escenarios[i][0]}/${escenarios[i][0]}-${j+1}.png",
                   "referenceUrl": "",
                   "readyEvent": "",
                   "readySelector": "",
@@ -101,7 +101,7 @@ const pathImagesArray = "../Playwright/ghost3.3.0/screenshots";
         folders = fs.readdirSync(path);
         newElemArray = [];
         await folders.forEach(function(folder) {
-            if(['e1','e2','e3','e11','e12','e13','e14','e16','e17','e18','e19'].includes(folder)){
+            if (['e1', 'e2', 'e3', 'e11', 'e12', 'e13', 'e14', 'e16', 'e17', 'e18', 'e19'].includes(folder)) {
                 newElemArray.push([folder, fs.readdirSync(`${path}/${folder}`).length])
             }
         });
