@@ -530,8 +530,8 @@ describe(`${appName} under monkeys`, function() {
                 curPageMaxX = Math.max(d.body.scrollWidth, d.body.offsetWidth, d.documentElement.clientWidth, d.documentElement.scrollWidth, d.documentElement.offsetWidth) - win.innerWidth
             })
             cy.wait(1000)
-            cy.get("#ember8").type("b@uniandes.edu.co")
-            cy.get("#ember10").type("$0987654321.")
+            cy.get("#ember8").type("administrador123@example.com")
+            cy.get("#ember10").type("administrador123")
             cy.get("#ember12").click()
             cy.wait(1000)
                 //Add an event for each type of event in order to enter the else statement of randomEvent method
