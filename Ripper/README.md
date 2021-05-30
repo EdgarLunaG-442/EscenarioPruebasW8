@@ -1,17 +1,7 @@
-# RIPuppet
-A node js library for GUI Ripping on web applications
+# Pasos para ejecutar las pruebas Ripper
 
-# Executing
-To execute the testing tool use the following command:
+1. en caso de no contar con la carpeta de modulos de la aplciación, ejecutar el comando ```npm install```
 
-```
-node index.js url headless
+2. Modifique la constantes ```url, ember10 y ember8``` de acuerdo a la ruta de la APB y la configuración de usuario deseada
 
-```
-
-For example:
-
-```
-node index.js https://github.com true
-
-```
+3. ejecutar el comando ```node index.js```

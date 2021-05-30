@@ -4,8 +4,8 @@
     "depthLevels": 1,
     "inputValues": true,
     "values": {
-        "ember10": "$0987654321.",
-        "ember8": "b@uniandes.edu.co"
+        "ember10": "administrador123",
+        "ember8": "administrador123@example.com"
     },
     "browsers": ["chromium"]
 }
