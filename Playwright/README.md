@@ -39,7 +39,7 @@ const administratorPassword = 'administrador123';
 ```
 
 ## 4. Ejecutar las pruebas
-Asegurese de estar en la ruta ```<Path-al-proyecto>\Playwright\ghost<version_deseada>``` y ejecute
+Asegurese de estar en la ruta ```<Path-al-proyecto>\Playwright\ghost<version_deseada>```. Por ejemplo ```<Path-al-proyecto>\Playwright\ghost3.42.5`` y ejecute
 
 ```node index.js```
 
