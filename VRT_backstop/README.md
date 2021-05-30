@@ -1,12 +1,12 @@
 # Pasos para ejecutar las pruebas VRT con BackStopJS
 
-1. Generar imágenes de pasos de pruebas en Ghost 3.3.0 Ghost 3.42.5 en Playwright
+1. Definir set de imágenes de la nueva versión (Ghost 3.42.5) a compara con las imágenes de referencia (Ghost 3.3.0). ***Opcional***
 2. Instalar las dependencias de BackStopJS
 3. Ejecutar las pruebas de BackStopJS
 
 
-## 1. Generar imágenes de pasos de pruebas en Ghost 3.3.0 Ghost 3.42.5 en Playwright
-Con el fin de separar las pruebas VRT de las E2E, se implementan capturas como referencia de la versión 3.3.0 y 3.42.5 de ghost, en las carpetas respectivas. En caso de que se requiera nuevos screenshots de alguna de estas dos versiones, es necesario refrescar las carpetas con las nuevas imagenes. Es decir, reemplazar la carpeta vieja de screenshots por la nueva y mantener la convención de nombres.
+## 1. Definir set de imágenes de la nueva versión (Ghost 3.42.5) a comparar con las imágenes de referencia (Ghost 3.3.0). ***Opcional***
+Este paso es opcional debido a que ya tiene un set de imágenes para evaluar de la versión de Ghost 3.42.5. Esta carpeta de imágenes se encuentra en ```<Path-al-proyecto>/VRT_backstop/ghost3.42.5/screenshots```. Si usted desea, puede reemplazar estas imágenes con imágenes generadas al ejecutar las pruebas ubicadas en ```<Path-al-proyecto>/Playwright``` para la versión de Ghost 3.42.5 (al ejecutar la prueba, en dicho sección del repositorio se generará una carpeta de imágenes llamada screenshots, la cuál reemplazaría a la que actualmente tenemos). No obstante, deberá tener en cuenta la estructura y/o convención de nombres.
 
 ## 2. Instalar las dependencias de BackStopJS
 Asegurese de estar en la ruta ```<Path-al-proyecto>\VRT_backstop``` y ejecute:
